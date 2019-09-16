@@ -2,8 +2,10 @@ package br.aepprog.model;
 
 import java.util.UUID;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
+@Entity
 public class Avaliacao {
 
 	@Id

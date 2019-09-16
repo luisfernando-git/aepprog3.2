@@ -1,5 +1,6 @@
 package br.aepprog.model;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 import javax.persistence.Entity;
@@ -15,7 +16,7 @@ public class Nota {
 	
 	@Min(value = 0)
 	@Max(value = 10)
-	private double valor;
+	private BigDecimal valor;
 	
 	public Nota() {
 		this.id = UUID.randomUUID().toString();
@@ -25,7 +26,7 @@ public class Nota {
 		return id;
 	}
 	
-	public double getValor() {
+	public BigDecimal getValor() {
 		return valor;
 	}
 }
